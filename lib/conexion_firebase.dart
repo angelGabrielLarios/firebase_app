@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_app_firebase/autentificacion_firebase.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class ConexionFirebase extends StatefulWidget {
   const ConexionFirebase({Key? key}) : super(key: key);
@@ -13,7 +15,10 @@ class ConexionFirebase extends StatefulWidget {
 
 class _ConexionFirebaseState extends State<ConexionFirebase> {
   // Inicializar firebase auth
+
   Future<FirebaseApp> _initializerFirebase() async {
+    //linea de codigo para realizar la conexion a firebase
+    // Future => eventos que van a suceder en el futuro
     FirebaseApp firebaseApp = await Firebase.initializeApp();
 
     return firebaseApp;
