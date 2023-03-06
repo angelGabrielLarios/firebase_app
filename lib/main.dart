@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_app_firebase/autentificacion_firebase.dart';
 import 'package:flutter_app_firebase/conexion_firebase.dart';
+import 'package:flutter_app_firebase/home.dart';
 /*
 main.dart
 conexion_firebase.dart
